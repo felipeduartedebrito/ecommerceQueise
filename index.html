@@ -8,7 +8,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-integrated.css">
 </head>
 
 <body>
@@ -35,7 +35,7 @@
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
-            <a href="#personalizar" class="cta-button">Personalize Já</a>
+            <a href="#" class="cta-button" onclick="openProductPage()">Personalizar Já</a>
         </nav>
     </header>
 
@@ -51,7 +51,7 @@
                 <h1>Personalize já</h1>
                 <p>Crie seu produto exclusivo com a mais alta qualidade e design sofisticado</p>
                 <div class="hero-buttons">
-                    <a href="#personalizar" class="btn-primary">
+                    <a href="#" class="btn-primary" onclick="openProductPage()">
                         Começar Agora
                         <span>→</span>
                     </a>
@@ -64,23 +64,23 @@
             <div class="hero-visual">
                 <div class="product-showcase">
                     <div class="showcase-grid">
-                        <div class="product-card">
+                        <div class="product-card" onclick="openProductPage()">
                             <div class="premium-badge">Premium</div>
                             <div class="product-image">
                                 <div class="product-visual">
-                                    <img src="imagens/copo_termico_de_cerveja_stanley_473ml_plum_personalizado_916_2_7c3111c33df2762491be463c97ff1d0c.webp"
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDE2MCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxnIGlkPSJnYXJyYWZhIj4KPGVsbGlwc2UgY3g9IjgwIiBjeT0iMTg1IiByeD0iNDAiIHJ5PSI4IiBmaWxsPSIjRTVFN0VCIiBmaWxsLW9wYWNpdHk9IjAuNSIvPgo8cmVjdCB4PSI1NSIgeT0iNTAiIHdpZHRoPSI1MCIgaGVpZ2h0PSIxMjUiIHJ4PSIyNSIgZmlsbD0iI0ZCQkYyNCIgc3Ryb2tlPSIjRjU5NzI2IiBzdHJva2Utd2lkdGg9IjEiLz4KPHJlY3QgeD0iNjIiIHk9IjQwIiB3aWR0aD0iMzYiIGhlaWdodD0iMjAiIHJ4PSIxOCIgZmlsbD0iIzM3NDE1MSIvPgo8Y2lyY2xlIGN4PSI4MCIgY3k9IjUwIiByPSI4IiBmaWxsPSIjMzc0MTUxIi8+CjxyZWN0IHg9IjU3IiB5PSI1MiIgd2lkdGg9IjQ2IiBoZWlnaHQ9IjEyMCIgcng9IjIzIiBmaWxsPSJ1cmwoI2dyYWRpZW50MSkiLz4KPC9nPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudDEiIHgxPSI4MCIgeTE9IjUyIiB4Mj0iODAiIHkyPSIxNzIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iI0ZCQkYyNCIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGNTk3MjYiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4="
                                         alt="QUEISE Produto">
                                 </div>
                             </div>
                             <div class="product-info">
-                                <div class="product-name">Garrafa Sticker</div>
+                                <div class="product-name">Garrafa Premium</div>
                                 <div class="product-price">R$ 165,00</div>
                             </div>
                         </div>
-                        <div class="product-card">
+                        <div class="product-card" onclick="openProductPage()">
                             <div class="product-image">
                                 <div class="product-visual">
-                                    <img src="imagens/copo_termico_de_cerveja_stanley_473ml_plum_personalizado_916_2_7c3111c33df2762491be463c97ff1d0c.webp"
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDE2MCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxnIGlkPSJjb3BvIj4KPGVsbGlwc2UgY3g9IjgwIiBjeT0iMTg1IiByeD0iNDAiIHJ5PSI4IiBmaWxsPSIjRTVFN0VCIiBmaWxsLW9wYWNpdHk9IjAuNSIvPgo8cmVjdCB4PSI0NSIgeT0iNjAiIHdpZHRoPSI3MCIgaGVpZ2h0PSI5MCIgcng9IjEwIiBmaWxsPSIjMzk4QkVCIiBzdHJva2U9IiMyNTYzRUIiIHN0cm9rZS13aWR0aD0iMSIvPgo8cmVjdCB4PSI2NSIgeT0iNDAiIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIgcng9IjE1IiBmaWxsPSIjMzc0MTUxIi8+CjxyZWN0IHg9IjQ3IiB5PSI2MiIgd2lkdGg9IjY2IiBoZWlnaHQ9Ijg2IiByeD0iOCIgZmlsbD0idXJsKCNncmFkaWVudDIpIi8+CjwvZz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQyIiB4MT0iODAiIHkxPSI2MiIgeDI9IjgwIiB5Mj0iMTQ4IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiMzOThCRUIiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMjU2M0VCIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+"
                                         alt="QUEISE Produto">
                                 </div>
                             </div>
@@ -89,10 +89,10 @@
                                 <div class="product-price">R$ 80,00</div>
                             </div>
                         </div>
-                        <div class="product-card">
+                        <div class="product-card" onclick="requestQuote()">
                             <div class="product-image">
                                 <div class="product-visual">
-                                    <img src="imagens/copo_termico_de_cerveja_stanley_473ml_plum_personalizado_916_2_7c3111c33df2762491be463c97ff1d0c.webp"
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDE2MCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxnIGlkPSJib2xzYSI+CjxlbGxpcHNlIGN4PSI4MCIgY3k9IjE4NSIgcng9IjUwIiByeT0iOCIgZmlsbD0iI0U1RTdFQiIgZmlsbC1vcGFjaXR5PSIwLjUiLz4KPHJlY3QgeD0iMzAiIHk9IjcwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjgwIiByeD0iMTAiIGZpbGw9IiMyMkM1NUUiIHN0cm9rZT0iIzE2QTM0QSIgc3Ryb2tlLXdpZHRoPSIxIi8+CjxyZWN0IHg9IjUwIiB5PSI1MCIgd2lkdGg9IjYwIiBoZWlnaHQ9IjIwIiByeD0iMTAiIGZpbGw9IiMzNzQxNTEiLz4KPHJlY3QgeD0iMzIiIHk9IjcyIiB3aWR0aD0iOTYiIGhlaWdodD0iNzYiIHJ4PSI4IiBmaWxsPSJ1cmwoI2dyYWRpZW50MykiLz4KPC9nPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudDMiIHgxPSI4MCIgeTE9IjcyIiB4Mj0iODAiIHkyPSIxNDgiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzIyQzU1RSIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxNkEzNEEiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4="
                                         alt="QUEISE Produto">
                                 </div>
                             </div>
@@ -101,10 +101,10 @@
                                 <div class="product-price">Sob consulta</div>
                             </div>
                         </div>
-                        <div class="product-card">
+                        <div class="product-card" onclick="requestQuote()">
                             <div class="product-image">
                                 <div class="product-visual">
-                                    <img src="imagens/copo_termico_de_cerveja_stanley_473ml_plum_personalizado_916_2_7c3111c33df2762491be463c97ff1d0c.webp"
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDE2MCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxnIGlkPSJtb2NoaWxhIj4KPGVsbGlwc2UgY3g9IjgwIiBjeT0iMTg1IiByeD0iNTUiIHJ5PSI4IiBmaWxsPSIjRTVFN0VCIiBmaWxsLW9wYWNpdHk9IjAuNSIvPgo8cmVjdCB4PSIyNSIgeT0iNjAiIHdpZHRoPSIxMTAiIGhlaWdodD0iMTAwIiByeD0iMTUiIGZpbGw9IiNFRjQ0NDQiIHN0cm9rZT0iI0RDMjYyNiIgc3Ryb2tlLXdpZHRoPSIxIi8+CjxyZWN0IHg9IjQ1IiB5PSI0MCIgd2lkdGg9IjcwIiBoZWlnaHQ9IjI1IiByeD0iMTIiIGZpbGw9IiMzNzQxNTEiLz4KPHJlY3QgeD0iMjciIHk9IjYyIiB3aWR0aD0iMTA2IiBoZWlnaHQ9Ijk2IiByeD0iMTMiIGZpbGw9InVybCgjZ3JhZGllbnQ0KSIvPgo8L2c+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRpZW50NCIgeDE9IjgwIiB5MT0iNjIiIHgyPSI4MCIgeTI9IjE1OCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjRUY0NDQ0Ii8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0RDMjYyNiIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPg=="
                                         alt="QUEISE Produto">
                                 </div>
                             </div>
@@ -129,254 +129,52 @@
         </div>
 
         <div class="featured-grid">
-            <div class="featured-main">
-                <div class="featured-image"></div>
+            <div class="featured-main" onclick="openProductPage()">
+                <div class="featured-image">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjI1MCIgdmlld0JveD0iMCAwIDIwMCAyNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgaWQ9ImdhcnJhZmEtZGVzdGFxdWUiPjxlbGxpcHNlIGN4PSIxMDAiIGN5PSIyMzAiIHJ4PSI2MCIgcnk9IjEwIiBmaWxsPSIjRTVFN0VCIiBmaWxsLW9wYWNpdHk9IjAuNSIvPjxyZWN0IHg9IjY1IiB5PSI0MCIgd2lkdGg9IjcwIiBoZWlnaHQ9IjE3MCIgcng9IjM1IiBmaWxsPSIjNDY4MkI0IiBzdHJva2U9IiMzNzQxNTEiIHN0cm9rZS13aWR0aD0iMiIvPjxyZWN0IHg9Ijc4IiB5PSIyNSIgd2lkdGg9IjQ0IiBoZWlnaHQ9IjMwIiByeD0iMjIiIGZpbGw9IiMzNzQxNTEiLz48Y2lyY2xlIGN4PSIxMDAiIGN5PSI0MCIgcj0iMTIiIGZpbGw9IiMzNzQxNTEiLz48cmVjdCB4PSI2NyIgeT0iNDIiIHdpZHRoPSI2NiIgaGVpZ2h0PSIxNjYiIHJ4PSIzMyIgZmlsbD0idXJsKCNncmFkaWVudDUpIi8+PC9nPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQ1IiB4MT0iMTAwIiB5MT0iNDIiIHgyPSIxMDAiIHkyPSIyMDgiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBzdG9wLWNvbG9yPSIjNDY4MkI0Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNEY5RUE4IiBzdG9wLW9wYWNpdHk9IjAuOSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjwvc3ZnPg==" alt="Garrafa Premium" style="width: 120px; height: 150px; object-fit: contain;">
+                </div>
                 <div class="featured-content">
-                    <h3>Garrafa Sticker Personalizada</h3>
+                    <h3>Garrafa Térmica Premium</h3>
                     <p>Nossa garrafa premium com design exclusivo e personalização completa. Tecnologia avançada de
                         isolamento térmico para manter suas bebidas na temperatura perfeita por horas.</p>
                     <div class="featured-price">R$ 165,00</div>
-                    <a href="#personalizar" class="btn-primary">
+                    <a href="#" class="btn-primary" onclick="openProductPage()">
                         Personalizar Agora
                         <span>→</span>
                     </a>
                 </div>
             </div>
 
-            <div class="featured-side">
-                <div class="featured-image"></div>
+            <div class="featured-side" onclick="openProductPage()">
+                <div class="featured-image">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE1MCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgaWQ9ImNvcG8tc2lkZSI+PGVsbGlwc2UgY3g9Ijc1IiBjeT0iMTg1IiByeD0iNDAiIHJ5PSI4IiBmaWxsPSIjRTVFN0VCIiBmaWxsLW9wYWNpdHk9IjAuNSIvPjxyZWN0IHg9IjM1IiB5PSI1MCIgd2lkdGg9IjgwIiBoZWlnaHQ9IjEwMCIgcng9IjE1IiBmaWxsPSIjMzk4QkVCIiBzdHJva2U9IiMyNTYzRUIiIHN0cm9rZS13aWR0aD0iMiIvPjxyZWN0IHg9IjU1IiB5PSIzMCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjMwIiByeD0iMjAiIGZpbGw9IiMzNzQxNTEiLz48cmVjdCB4PSIzNyIgeT0iNTIiIHdpZHRoPSI3NiIgaGVpZ2h0PSI5NiIgcng9IjEzIiBmaWxsPSJ1cmwoI2dyYWRpZW50NikiLz48L2c+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudDYiIHgxPSI3NSIgeTE9IjUyIiB4Mj0iNzUiIHkyPSIxNDgiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBzdG9wLWNvbG9yPSIjMzk4QkVCIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMjU2M0VCIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PC9zdmc+" alt="Copo Térmico" style="width: 100px; height: 120px; object-fit: contain;">
+                </div>
                 <div class="featured-content">
                     <h3>Copo Térmico</h3>
                     <p>Design ergonômico e isolamento superior para seu café ou chá favorito</p>
                     <div class="featured-price">R$ 80,00</div>
-                    <a href="#" class="collection-link">
-                        Ver detalhes →
+                    <a href="#" class="collection-link" onclick="openProductPage()">
+                        Personalizar →
                     </a>
                 </div>
             </div>
 
-            <div class="featured-side">
-                <div class="featured-image"></div>
+            <div class="featured-side" onclick="requestQuote()">
+                <div class="featured-image">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE2MCIgdmlld0JveD0iMCAwIDE1MCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgaWQ9ImJvbHNhLXNpZGUiPjxlbGxpcHNlIGN4PSI3NSIgY3k9IjE4NSIgcng9IjUwIiByeT0iOCIgZmlsbD0iI0U1RTdFQiIgZmlsbC1vcGFjaXR5PSIwLjUiLz48cmVjdCB4PSIyNSIgeT0iNjAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiByeD0iMTUiIGZpbGw9IiMyMkM1NUUiIHN0cm9rZT0iIzE2QTM0QSIgc3Ryb2tlLXdpZHRoPSIyIi8+PHJlY3QgeD0iNDUiIHk9IjQwIiB3aWR0aD0iNjAiIGhlaWdodD0iMjUiIHJ4PSIxMiIgZmlsbD0iIzM3NDE1MSIvPjxyZWN0IHg9IjI3IiB5PSI2MiIgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiByeD0iMTMiIGZpbGw9InVybCgjZ3JhZGllbnQ3KSIvPjwvZz48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRpZW50NyIgeDE9Ijc1IiB5MT0iNjIiIHgyPSI3NSIgeTI9IjE1OCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIHN0b3AtY29sb3I9IiMyMkM1NUUiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxNkEzNEEiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48L3N2Zz4=" alt="Bolsa Térmica" style="width: 110px; height: 120px; object-fit: contain;">
+                </div>
                 <div class="featured-content">
                     <h3>Bolsa Térmica</h3>
                     <p>Tecnologia avançada para manter seus alimentos sempre frescos</p>
                     <div class="featured-price">Sob consulta</div>
-                    <a href="#" class="collection-link">
-                        Ver detalhes →
+                    <a href="#" class="collection-link" onclick="requestQuote()">
+                        Solicitar Orçamento →
                     </a>
                 </div>
             </div>
         </div>
 
         <div class="collections-overview">
-            <div class="collection-card scroll-animate">
-                <div class="collection-image"></div>
-                <div class="collection-content">
-                    <h3>Copos & Garrafas</h3>
-                    <p>Linha completa de produtos para hidratação premium, desde garrafas térmicas até copos
-                        personalizados com tecnologia de ponta</p>
-                    <a href="#" class="collection-link">
-                        Explorar Coleção →
-                    </a>
-                </div>
-            </div>
-
-            <div class="collection-card scroll-animate">
-                <div class="collection-image"></div>
-                <div class="collection-content">
-                    <h3>Bolsas Térmicas</h3>
-                    <p>Soluções inteligentes e elegantes para manter seus alimentos e bebidas na temperatura ideal
-                        durante todo o dia</p>
-                    <a href="#" class="collection-link">
-                        Explorar Coleção →
-                    </a>
-                </div>
-            </div>
-
-            <div class="collection-card scroll-animate">
-                <div class="collection-image"></div>
-                <div class="collection-content">
-                    <h3>Malas & Mochilas</h3>
-                    <p>Produtos funcionais e estilosos para suas viagens e atividades do dia a dia, com design
-                        contemporâneo</p>
-                    <a href="#" class="collection-link">
-                        Explorar Coleção →
-                    </a>
-                </div>
-            </div>
-
-            <div class="collection-card scroll-animate">
-                <div class="collection-image"></div>
-                <div class="collection-content">
-                    <h3>Para Empresas</h3>
-                    <p>Soluções corporativas personalizadas para brindes e presentes empresariais únicos e memoráveis
-                    </p>
-                    <a href="#" class="collection-link">
-                        Explorar Coleção →
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Para Empresas Section -->
-    <section id="para-empresas" class="para-empresas scroll-animate">
-        <div class="para-empresas-content">
-            <div class="para-empresas-text">
-                <div class="tagline">Soluções Corporativas</div>
-                <h2>Fortaleça sua marca com produtos exclusivos</h2>
-                <p>Criamos soluções personalizadas que conectam sua empresa aos clientes e colaboradores de forma única
-                    e memorável.</p>
-
-                <div class="para-empresas-features">
-                    <div class="empresa-feature">
-                        <h4>Brindes Premium</h4>
-                        <p>Produtos de alta qualidade que representam sua marca</p>
-                    </div>
-                    <div class="empresa-feature">
-                        <h4>Kits Corporativos</h4>
-                        <p>Soluções completas para eventos e campanhas</p>
-                    </div>
-                    <div class="empresa-feature">
-                        <h4>Atendimento Dedicado</h4>
-                        <p>Equipe especializada em soluções empresariais</p>
-                    </div>
-                    <div class="empresa-feature">
-                        <h4>Prazos Garantidos</h4>
-                        <p>Entrega pontual para seus eventos corporativos</p>
-                    </div>
-                </div>
-
-                <a href="#contato" class="btn-white">
-                    Solicitar Orçamento
-                    <span>→</span>
-                </a>
-            </div>
-            <div class="para-empresas-visual">
-                <div class="empresas-grid">
-                    <div class="empresa-card">
-                        <div class="empresa-icon">B</div>
-                        <h4>Brindes Executivos</h4>
-                        <p>Qualidade excepcional</p>
-                    </div>
-                    <div class="empresa-card">
-                        <div class="empresa-icon">K</div>
-                        <h4>Kits Corporativos</h4>
-                        <p>Soluções completas</p>
-                    </div>
-                    <div class="empresa-card">
-                        <div class="empresa-icon">E</div>
-                        <h4>Eventos Especiais</h4>
-                        <p>Momentos únicos</p>
-                    </div>
-                    <div class="empresa-card">
-                        <div class="empresa-icon">P</div>
-                        <h4>Presentes VIP</h4>
-                        <p>Relacionamento premium</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="sobre" class="about scroll-animate">
-        <div class="about-content">
-            <div class="about-text">
-                <div class="tagline">Nossa Essência</div>
-                <h2>Por que escolher a QUEISE?</h2>
-                <p>Criamos produtos personalizados com qualidade premium e design exclusivo. Cada peça é cuidadosamente
-                    desenvolvida para refletir sua personalidade única e proporcionar uma experiência excepcional.</p>
-                <div class="about-features">
-                    <div class="feature">
-                        <div class="feature-icon">
-                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjUwIiBmaWxsPSIjOTFBN0JEIi8+CjxjaXJjbGUgY3g9IjUwIiBjeT0iMzUiIHI9IjEwIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMzUgNDVIMzBDMjcuMjM4NiA0NSAyNSA0Ny4yMzg2IDI1IDUwVjY1QzI1IDY3Ljc2MTQgMjcuMjM4NiA3MCAzMCA3MEg3MEMNMi43NjE0IDcwIDc1IDY3Ljc2MTQgNzUgNjVWNTBDNzUgNDcuMjM4NiA3Mi43NjE0IDQ1IDcwIDQ1SDY1IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjMiIGZpbGw9Im5vbmUiLz4KPC9zdmc+"
-                                alt="Quality">
-                        </div>
-                        <h4>Qualidade Premium</h4>
-                        <p>Materiais selecionados e acabamento impecável</p>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">
-                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjUwIiBmaWxsPSIjOTFBN0JEIi8+CjxjaXJjbGUgY3g9IjUwIiBjeT0iMzUiIHI9IjEwIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMzUgNDVIMzBDMjcuMjM4NiA0NSAyNSA0Ny4yMzg2IDI1IDUwVjY1QzI1IDY3Ljc2MTQgMjcuMjM4NiA3MCAzMCA3MEg3MEMNMi43NjE0IDcwIDc1IDY3Ljc2MTQgNzUgNjVWNTBDNzUgNDcuMjM4NiA3Mi43NjE0IDQ1IDcwIDQ1SDY1IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjMiIGZpbGw9Im5vbmUiLz4KPC9zdmc+"
-                                alt="Design">
-                        </div>
-                        <h4>Design Exclusivo</h4>
-                        <p>Criações únicas desenvolvidas para você</p>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">
-                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjUwIiBmaWxsPSIjOTFBN0JEIi8+CjxjaXJjbGUgY3g9IjUwIiBjeT0iMzUiIHI9IjEwIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMzUgNDVIMzBDMjcuMjM4NiA0NSAyNSA0Ny4yMzg2IDI1IDUwVjY1QzI1IDY3Ljc2MTQgMjcuMjM4NiA3MCAzMCA3MEg3MEMNMi43NjE0IDcwIDc1IDY3Ljc2MTQgNzUgNjVWNTBDNzUgNDcuMjM4NiA3Mi43NjE0IDQ1IDcwIDQ1SDY1IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjMiIGZpbGw9Im5vbmUiLz4KPC9zdmc+"
-                                alt="Delivery">
-                        </div>
-                        <h4>Entrega Rápida</h4>
-                        <p>Seus produtos chegam no prazo combinado</p>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">
-                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjUwIiBmaWxsPSIjOTFBN0JEIi8+CjxjaXJjbGUgY3g9IjUwIiBjeT0iMzUiIHI9IjEwIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMzUgNDVIMzBDMjcuMjM4NiA0NSAyNSA0Ny4yMzg2IDI1IDUwVjY1QzI1IDY3Ljc2MTQgMjcuMjM4NiA3MCAzMCA3MEg3MEMNMi43NjE0IDcwIDc1IDY3Ljc2MTQgNzUgNjVWNTBDNzUgNDcuMjM4NiA3Mi43NjE0IDQ1IDcwIDQ1SDY1IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjMiIGZpbGw9Im5vbmUiLz4KPC9zdmc+"
-                                alt="Brazil">
-                        </div>
-                        <h4>Feito no Brasil</h4>
-                        <p>Produção nacional com responsabilidade</p>
-                    </div>
-                </div>
-            </div>
-            <div class="about-visual">
-                <div class="logo-display">
-                    <div class="logo-letter">
-                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjUwIiBmaWxsPSIjOTFBN0JEIi8+CjxjaXJjbGUgY3g9IjUwIiBjeT0iMzUiIHI9IjEwIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMzUgNDVIMzBDMjcuMjM4NiA0NSAyNSA0Ny4yMzg2IDI1IDUwVjY1QzI1IDY3Ljc2MTQgMjcuMjM4NiA3MCAzMCA3MEg3MEMNMi43NjE0IDcwIDc1IDY3Ljc2MTQgNzUgNjVWNTBDNzUgNDcuMjM4NiA3Mi43NjE0IDQ1IDcwIDQ1SDY1IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjMiIGZpbGw9Im5vbmUiLz4KPC9zdmc+"
-                            alt="QUEISE Symbol">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-brand">
-                <h3>QUEISE</h3>
-                <p>Transformamos ideias em produtos únicos e personalizados. Cada peça conta uma história, a sua
-                    história. Nosso compromisso é com a excelência e a sofisticação em cada detalhe.</p>
-                <div class="tagline">Use Queise, Use Exclusividade!</div>
-            </div>
-            <div class="footer-section">
-                <h4>Produtos</h4>
-                <a href="#">Garrafas & Copos</a>
-                <a href="#">Bolsas Térmicas</a>
-                <a href="#">Malas & Mochilas</a>
-                <a href="#">Para Empresas</a>
-                <a href="#">Imãs de Geladeira</a>
-            </div>
-            <div class="footer-section">
-                <h4>Suporte</h4>
-                <a href="#">Central de Ajuda</a>
-                <a href="#">Como Personalizar</a>
-                <a href="#">Trocas e Devoluções</a>
-                <a href="#">Prazo de Entrega</a>
-                <a href="#">Contato</a>
-            </div>
-            <div class="footer-section">
-                <h4>Conecte-se</h4>
-                <a href="#">Instagram @usequeise</a>
-                <a href="#">Facebook</a>
-                <a href="#">WhatsApp</a>
-                <a href="#">E-mail</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 QUEISE. Todos os direitos reservados. | CNPJ: 42.779.053/0001-22</p>
-            <div class="social-links">
-                <a href="#" class="social-link">IG</a>
-                <a href="#" class="social-link">FB</a>
-                <a href="#" class="social-link">WA</a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-
-</html>
+            <div class="collection-card scroll-animate" onclick="openProductPage()">
+                <div class="collection-image">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iNjAiIGN5PSI2MCIgcj0iNDAiIGZpbGw9IiM0NjgyQjQiIGZpbGwtb3BhY2l0eT0iMC4xIi8+PGNpcmNsZSBjeD0iNjAiIGN5PSI2MCIgcj0iMjAiIGZpbGw9IndoaXRlIi8+PHRleHQgeD0iNjAiIHk9IjY1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPS
